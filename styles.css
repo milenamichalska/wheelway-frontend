@@ -1,0 +1,67 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    padding:20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+}
+
+nav {
+    color: white;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 180px;
+    padding: 70px 0 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9;
+    text-align: center;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu_item {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.menu_item:hover {
+    background-color: black;
+    color: #dbd512
+}
+
+#logo {
+    width: 140px;
+    height: 140px;
+}
+
+#mapid {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #222222;
+    z-index: 1;
+}
+
+footer {
+    color: white;
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+    text-align: center;
+}

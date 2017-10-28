@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Siema</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+          integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+          crossorigin=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<header>
+    Siema
+</header>
+<nav id="vm">
+    <img src="logo.png" id="logo"><br><br>
+    <div v-for="menuItem in menuItems" class="menu_item"><a :href='menuItem.link'>{{menuItem.label}}</a></div>
+</nav>
+
+<div id="mapid"></div>
+
+<!--<select id="markOptionSelect">-->
+    <!--<option value="marker">Marker</option>-->
+    <!--<option value="path">Path</option>-->
+<!--</select>-->
+
+<footer>Copyright siema</footer>
+
+<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+        integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+        crossorigin=""></script>
+<script src="main.js"></script>
+</body>
+</html>
