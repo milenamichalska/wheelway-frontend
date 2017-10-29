@@ -15,10 +15,10 @@
     </header>
     <nav id="vm">
       <img src="/img/logo.png" id="logo"><br><br>
-      <div v-for="menuItem in menuItems" class="menu_item"><a :href='menuItem.link'>{{menuItem.label}}</a></div>
+      <div v-for="menuItem in menuItems" class="menu_item"><a v-on:click="addMode = true">{{menuItem.label}}</a></div>
     </nav>
 
-    <div id="destination_menu">
+    <div id="destination_menu" v-if="!addMode">
       <table>
         <tr><td class="to_cell">From: </td><td><input class="input_cell" v-model="from"></td></tr>
         <tr class="separator"></tr>
@@ -35,14 +35,14 @@
       </table>
     </div>
 
-    <!--<div id="destination_menu" v-if="">-->
-      <!--<table>-->
-        <!--<tr><td class="to_cell">Add: </td><td><select v-model="selected" class="input_cell">-->
-          <!--<option>Marker</option>-->
-          <!--<option>Path</option>-->
-        <!--</select></td></tr>-->
-      <!--</table>-->
-    <!--</div>-->
+    <div id="destination_menu" v-if="addMode">
+      <table>
+        <tr><td class="to_cell">Add: </td><td><select v-model="selected" class="input_cell">
+          <option>Marker</option>
+          <option>Path</option>
+        </select></td></tr>
+      </table>
+    </div>
 
     <div id="mapid"></div>
 
@@ -66,7 +66,8 @@
               ],
               to: "",
               from: "",
-              selected: ""
+              selected: "",
+              addMode: false,
           }
       }, mounted: function () {
           console.log("mounted");
