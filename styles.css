@@ -14,6 +14,13 @@ header {
     z-index: 10;
 }
 
+#filters {
+    color: #dbd512;
+    font-weight: bold;
+    margin: 0 20px 0 95px;
+    display: inline-block;
+}
+
 nav {
     color: white;
     position: absolute;
@@ -25,6 +32,19 @@ nav {
     z-index: 9;
     text-align: center;
 }
+
+.input_wrapper {
+    padding: 0 20px;
+    display: inline-block;
+    color: white;
+    border-left: 0;
+}
+
+/* todo: figure out why first-child is not working */
+div.input_wrapper:last-child {
+    border-left: 1px solid #dbd512;
+}
+
 
 a:link, a:visited, a:hover, a:active {
     color: inherit;
@@ -41,9 +61,51 @@ a:link, a:visited, a:hover, a:active {
     color: #dbd512
 }
 
+.menu_item:last-child {
+    color: lightgray;
+}
+
 #logo {
     width: 140px;
     height: 140px;
+}
+
+#destination_menu {
+    position: absolute;
+    top: 90px;
+    left: 210px;
+    z-index: 10;
+}
+
+input {
+    border: none;
+}
+
+.input_cell {
+    background-color: rgba(255,255,255, 0.7);
+    padding: 10px 15px;
+    width: 250px;
+    box-shadow: 2px 3px 1px #AAA;
+}
+
+.separator {
+    height: 20px;
+}
+
+.to_cell {
+    font-weight: bold;
+    padding: 10px;
+    text-align: right;
+}
+
+#subtitle {
+    color: #dbd512;
+    font-size: larger;
+}
+
+#details_table {
+    margin-top: 15px;
+    width: 100%;
 }
 
 #mapid {
