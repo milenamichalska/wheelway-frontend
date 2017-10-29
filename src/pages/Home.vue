@@ -34,6 +34,7 @@
                   console.log(this.login);
                   console.log(this.passw);
 
+                  this.$http.post('http://192.168.43.65:8082/auth',[], {password: this.passw, login: this.login}).then(response => {
                       this.someData = response.body;
 
                   }, response => {
