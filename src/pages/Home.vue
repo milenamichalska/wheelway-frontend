@@ -20,8 +20,10 @@
   import MainLayout from '../layouts/Main.vue'
   import Vue from 'vue'
   import VueResource from 'vue-resource'
+  import router from 'vue-router'
 
   Vue.use(VueResource);
+  Vue.use(router);
 
   const siema = "siema";
 
@@ -36,13 +38,13 @@
 
                   this.$http.post('http://192.168.43.65:8082/auth',[], {password: this.passw, login: this.login}).then(response => {
                       this.someData = response.body;
+                      window.open("/about","_self")
 
                   }, response => {
-                      // error callback
+                      window.open("/about","_self")
                   });
               }
           }
-
       }
   }
 </script>
