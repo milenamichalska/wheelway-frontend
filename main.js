@@ -11,8 +11,15 @@ var vm = new Vue({
     }
 });
 
+var pinIcon = L.icon({
+    iconUrl: 'pinicon.png',
+    iconSize: [70, 70],
+    iconAnchor: [22, 94],
+    popupAnchor: [-3, -76],
+});
+
 var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-var marker = L.marker([50.06, 19.94]).addTo(mymap);
+var marker = L.marker([50.06, 19.94], {icon: pinIcon}).addTo(mymap);
 var pathArr = [];
 
 mymap.on('click', function(e) {
