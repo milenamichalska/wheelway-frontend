@@ -7,8 +7,8 @@
       <div id="loginWrapper">
         <img src="/img/logo.png" id="logo">
         <div class="inputWrapper"><input class="input_cell" v-model="login" placeholder="Login"></div>
-        <div class="inputWrapper"><input class="input_cell" v-model="pass" placeholder="Password"></div>
-        <div id="button">Sign In</div>
+        <div class="inputWrapper"><input class="input_cell" v-model="passw" placeholder="Password"></div>
+        <div id="button" v-on:click="signIn()">Sign In</div>
       </div>
     </div>
     <img id="background" src="/img/bg1.png">
@@ -18,11 +18,31 @@
 
 <script>
   import MainLayout from '../layouts/Main.vue'
+  import Vue from 'vue'
+  import VueResource from 'vue-resource'
+
+  Vue.use(VueResource);
+
+  const siema = "siema";
 
   export default {
-    components: {
-      MainLayout
-    }
+      data () {
+          return {
+              login: "",
+              passw: "",
+              signIn: function () {
+                  console.log(this.login);
+                  console.log(this.passw);
+
+                      this.someData = response.body;
+
+                  }, response => {
+                      // error callback
+                  });
+              }
+          }
+
+      }
   }
 </script>
 
