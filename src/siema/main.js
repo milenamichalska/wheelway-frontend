@@ -1,3 +1,5 @@
+Vue.use(VueResource);
+
 var vm = new Vue({
     el: '#vm',
     data: {

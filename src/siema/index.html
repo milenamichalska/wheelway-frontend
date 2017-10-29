@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Siema</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+          integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+          crossorigin=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<header>
+    <div id="filters">Filters: </div>
+
+    <div class="input_wrapper">
+        <label for="ramps">Ramps</label>
+        <input type="checkbox" id="ramps" v-model="check.ramps">
+    </div>
+
+    <div class="input_wrapper">
+        <label for="stairs">Stairs</label>
+        <input type="checkbox" id="stairs" v-model="check.stairs">
+    </div>
+</header>
+<nav id="vm">
+    <img src="../../img/logo.png" id="logo"><br><br>
+    <div v-for="menuItem in menuItems" class="menu_item"><a :href='menuItem.link'>{{menuItem.label}}</a></div>
+</nav>
+
+<div id="destination_menu">
+    <table>
+        <tr><td class="to_cell">From: </td><td><input class="input_cell" v-model="from"></td></tr>
+        <tr class="separator"></tr>
+        <tr><td class="to_cell">To: </td><td><input class="input_cell" v-model="to"></td></tr>
+        <tr class="separator"></tr>
+        <tr><td class="to_cell"></td><td><div class="input_cell">
+            <span id="subtitle">Track details</span> <br>
+            <table id="details_table">
+                <tr><td rowspan="2"><img src="../../img/icon1.png" width="20"></td><td><b>21 min</b></td><td>4 ramps</td></tr><tr>
+                <td>1.5 km</td><td>5 stairs</td></tr>
+            </table>
+        </div></td></tr>
+
+    </table>
+</div>
+
+<div id="mapid"></div>
+
+<!--<select id="markOptionSelect">-->
+    <!--<option value="marker">Marker</option>-->
+    <!--<option value="path">Path</option>-->
+<!--</select>-->
+
+<footer>Copyright siema</footer>
+
+<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+        integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+        crossorigin=""></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.3.4/vue-resource.min.js"
+        integrity="sha256-OZ+Xidb5+lV/saUzcfonHJQ3koQncPy0hLjT8dROdOU="
+        crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
