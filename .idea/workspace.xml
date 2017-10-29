@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51c65d57-f304-491a-b30c-1258f15fa127" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.babelrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/VLink.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/layouts/Main.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/404.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/About.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/Home.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/siema/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpack.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yarn.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/icon1.png" afterPath="$PROJECT_DIR$/img/icon1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/logo.png" afterPath="$PROJECT_DIR$/img/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/src/siema/main.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pinicon.png" afterPath="$PROJECT_DIR$/img/pinicon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/styles.css" afterPath="$PROJECT_DIR$/src/siema/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,11 +27,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Home.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/Home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+            <state relative-caret-position="255">
+              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="50" lean-forward="false" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -103,6 +94,7 @@
         <option value="$PROJECT_DIR$/src/layouts/Main.vue" />
         <option value="$PROJECT_DIR$/src/pages/About.vue" />
         <option value="$PROJECT_DIR$/src/pages/Home.vue" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -221,12 +213,12 @@
       <updated>1509228159171</updated>
       <workItem from="1509228160803" duration="1478000" />
       <workItem from="1509234521983" duration="5201000" />
-      <workItem from="1509245604787" duration="7875000" />
+      <workItem from="1509245604787" duration="8155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14554000" />
+    <option name="totallyTimeSpent" value="14834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -401,8 +393,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/Home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        <state relative-caret-position="255">
+          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="50" lean-forward="false" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
           <folding />
         </state>
       </provider>
