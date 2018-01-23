@@ -44,7 +44,7 @@
       </table>
     </div>
 
-    <div id="mapid"></div>
+    <div id="mapid" v-on:click="mapOnClick($event)"></div>
 
     <footer>Copyright siema</footer>
   </div>
@@ -55,6 +55,7 @@
   export default {
       data () {
           return {
+              mymap: null,
               ramps: 0,
               stairs: 0,
               menuItems: [
@@ -64,6 +65,21 @@
                   {label: 'Travelled Tracks', link: 'siema'},
                   {label: 'Log Out', link: 'siema'}
               ],
+              mapOnClick: function(e) {
+
+                  var popLocation= e.latlng;
+                  var pathArr = [];
+
+                  console.log(this.mymap);
+
+                  if (this.selected === "Marker") {
+                      pathArr = [];
+                      L.marker(popLocation).addTo(this.mymap);
+                  } else if (this.selected === "Path") {
+                      pathArr.push(popLocation);
+                      L.polyline(pathArr, {color: 'red'}).addTo(this.mymap);
+                  }
+              },
               to: "",
               from: "",
               selected: "",
@@ -79,33 +95,18 @@
                   popupAnchor: [-3, -76],
               });
 
-              var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-              var marker = L.marker([50.06, 19.94], {icon: pinIcon}).addTo(mymap);
+          this.mymap = L.map('mapid').setView([51.505, -0.09], 13);
+              var marker = L.marker([50.06, 19.94], {icon: pinIcon}).addTo(this.mymap);
               var pathArr = [];
-
-              mymap.on('click', function(e) {
-                  var popLocation= e.latlng;
-                  var el = document.getElementById("markOptionSelect");
-                  var option = el.options[el.selectedIndex].value;
-
-                  if (this.selected === "Marker") {
-                      pathArr = [];
-                      L.marker(popLocation).addTo(mymap);
-                  } else if (this.selected === "Path") {
-                      pathArr.push(popLocation);
-                      L.polyline(pathArr, {color: 'red'}).addTo(mymap);
-                  }
-
-              });
 
               L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
                   attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
                   maxZoom: 18,
                   id: 'mapbox.streets',
                   accessToken: 'pk.eyJ1IjoibWlsZW5rYSIsImEiOiJjajliY2E2aGkxY25rMzRwOW96ZWU5emNxIn0.OVwd_SGAbNqerEHKPeM1dw'
-              }).addTo(mymap);
+              }).addTo(this.mymap);
 
-              mymap.panTo([50.06, 19.94]);
+              this.mymap.panTo([50.06, 19.94]);
       }
   }
 </script>

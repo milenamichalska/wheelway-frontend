@@ -54,10 +54,10 @@
       <file leaf-file-name="About.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/About.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="82" column="51" lean-forward="false" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="51" />
+            <state relative-caret-position="203">
+              <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding>
-                <marker date="1509273831314" expanded="true" signature="3484:3490" ph="©" />
+                <marker date="1509275039036" expanded="true" signature="3488:3494" ph="©" />
               </folding>
             </state>
           </provider>
@@ -111,6 +111,8 @@
       <find>map</find>
       <find>click</find>
       <find>v-o</find>
+      <find>mapid</find>
+      <find>mymap</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -252,10 +254,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24288000" />
+    <option name="totallyTimeSpent" value="26093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24776785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -467,7 +470,7 @@
         <state relative-caret-position="17">
           <caret line="17" column="88" lean-forward="false" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
           <folding>
-            <marker date="1509273831314" expanded="true" signature="3484:3490" ph="©" />
+            <marker date="1509275039036" expanded="true" signature="3488:3494" ph="©" />
           </folding>
         </state>
       </provider>
@@ -625,10 +628,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/About.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="82" column="51" lean-forward="false" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="51" />
+        <state relative-caret-position="203">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
-            <marker date="1509273831314" expanded="true" signature="3484:3490" ph="©" />
+            <marker date="1509275039036" expanded="true" signature="3488:3494" ph="©" />
           </folding>
         </state>
       </provider>
